@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>【一時停止のお知らせ】LiVE Th!nk</title>
-<meta name="description" content="LiVE Th!nk のサイト・管理画面は、システム移行にともない一時的にご利用いただけません。ご用のある方は、これまでの連絡窓口までご連絡ください。">
+<title>【ご案内】LiVE Th!nk の公式サイトはこちら</title>
+<meta name="description" content="LiVE Th!nk の公式サイトは https://livethink.live でご覧いただけます。システム移行にともない、一部の画面を一時的に停止しています。">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="【一時停止のお知らせ】LiVE Th!nk">
-<meta property="og:description" content="LiVE Th!nk のサイト・管理画面は、システム移行にともない一時的にご利用いただけません。ご用のある方は、これまでの連絡窓口までご連絡ください。">
+<meta property="og:title" content="【ご案内】LiVE Th!nk の公式サイトはこちら">
+<meta property="og:description" content="LiVE Th!nk の公式サイトは https://livethink.live でご覧いただけます。">
 <meta property="og:type" content="website">
 <style>
   :root{
     --bg:#0f1117; --ink:#f2f3f5; --sub:#a2a8b4; --line:#262b36;
-    --accent:#5b6cff; --card:#171a22;
+    --accent:#5b6cff; --accent-dark:#4453e6; --card:#171a22;
     --pad-t:env(safe-area-inset-top,0px); --pad-b:env(safe-area-inset-bottom,0px);
   }
   *{box-sizing:border-box}
@@ -30,10 +30,24 @@
   .inner{padding:44px 0 0}
   .brand{font-size:12.5px;color:var(--sub);letter-spacing:.16em;margin:0 0 10px;text-align:center}
   h1{font-size:24px;line-height:1.55;margin:0 0 18px;font-weight:800;text-align:center}
+  h1 .em{color:#9aa5ff}
   .rule{width:44px;height:3px;background:var(--accent);border-radius:2px;margin:0 auto 24px}
   p.body{margin:0 0 16px;font-size:15px;color:var(--sub)}
   p.body strong{color:var(--ink)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:26px 0 0}
+
+  .cta{margin:26px 0 0;display:grid;gap:12px}
+  .btn{display:block;text-decoration:none;border-radius:14px;padding:18px 18px;text-align:center;
+    transition:transform .08s ease}
+  .btn:active{transform:translateY(2px)}
+  .btn .k{display:block;font-size:12.5px;font-weight:700;opacity:.9;letter-spacing:.05em}
+  .btn .v{display:block;font-size:19px;font-weight:800;margin-top:3px;line-height:1.35}
+  .btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+  .btn-main:hover{background:var(--accent-dark)}
+  .btn-sub{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn-sub:hover{border-color:var(--accent)}
+  .btn-sub .v{font-size:17px}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:24px 0 0}
   .card h2{font-size:15px;margin:0 0 10px;font-weight:800}
   .card p{margin:0;font-size:14.5px;color:var(--sub)}
   footer{text-align:center;color:var(--sub);font-size:12.5px;
@@ -46,15 +60,28 @@
 <main>
  <div class="inner">
   <p class="brand">L i V E  T h ! n k</p>
-  <h1>サイト・管理画面を<br>一時停止しています</h1>
+  <h1>公式サイトは<br><span class="em">こちら</span>でご覧いただけます</h1>
   <div class="rule"></div>
-  <p class="body">システムの入れ替え作業にともない、当サイトおよび管理画面（CMS・メンバーページ）を一時的に停止しています。</p><p class="body"><strong>事業の運営・ライバーのサポートは通常どおり継続しております。</strong>ログインが必要な作業は、復旧までお待ちいただくか、担当マネージャーまでご連絡ください。</p>
-  <div class="card"><h2>ご用のある方へ</h2><p>所属ライバーの皆さま・お取引先の皆さまは、これまでと同じ連絡窓口（担当マネージャー・LINEグループ）へそのままご連絡ください。サイトが見られない間も、ご連絡はすべて受け付けております。</p></div><div class="card"><h2>影響のある画面</h2><p>トップページ／CMS管理画面／メンバーページ／ログイン。復旧の見込みが立ちしだい、担当より個別にご案内いたします。</p></div>
+  <p class="body">システムの入れ替え作業にともない、一部の画面を一時的に停止しています。</p>
+  <p class="body"><strong>公式サイトと会員サイトは通常どおりご利用いただけます。</strong>下のボタンからお進みください。</p>
+
+  <div class="cta">
+    <a class="btn btn-main" href="https://livethink.live" rel="noopener">
+      <span class="k">▶ 事務所の公式サイト</span>
+      <span class="v">livethink.live を見る</span>
+    </a>
+    <a class="btn btn-sub" href="https://member.livethink.live" rel="noopener">
+      <span class="k">▶ 所属ライバーの方</span>
+      <span class="v">会員サイトにログイン</span>
+    </a>
+  </div>
+
+  <div class="card"><h2>ご用のある方へ</h2><p>所属ライバーの皆さま・お取引先の皆さまは、これまでと同じ連絡窓口（担当マネージャー・LINEグループ）へそのままご連絡ください。ご連絡はすべて受け付けております。</p></div>
+  <div class="card"><h2>一時的に停止している画面</h2><p>CMS管理画面と、旧アドレス（livethink.manus.space）でご覧いただいていたページです。復旧の見込みが立ちしだい、担当より個別にご案内いたします。</p></div>
  </div>
 </main>
 <footer>
   ご不便をおかけしております。<br>
-  準備が整いしだい、あらためてご案内いたします。<br>
   <span style="opacity:.75">&copy; LiVE Th!nk</span>
 </footer>
 </body>
